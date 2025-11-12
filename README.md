@@ -27,6 +27,9 @@ This repository implements a leakage-aware, production-ready pipeline to predict
   \]
 
 ---
+## Data
+- `dataset/train.csv` — training rows (contains `price`).  
+- `dataset/test.csv` — test rows (no `price`).
 
 ## Quick start (examples)
 
@@ -48,3 +51,4 @@ python train_regression_transformer_tabular.py \
   --output_dir checkpoints \
   --model_name microsoft/deberta-v3-base \
   --folds 5 --patience 5 --log_every_steps 200 --fp16
+
